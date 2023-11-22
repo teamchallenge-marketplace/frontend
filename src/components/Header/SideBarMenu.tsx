@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { IoPersonOutline } from "react-icons/io5";
-import CustomLink from "../CustomLink/CustomLink";
+import CustomLink from "../Custom/CustomLink/CustomLink";
 import { SlBasket } from "react-icons/sl";
 import { LuWallet } from "react-icons/lu";
 import { MdSecurity } from "react-icons/md";
@@ -45,7 +45,6 @@ const SideBarMenu: FC<Props> = ({ isSidebarOpen, closeSideBar }) => {
                         <CustomLink path={'discount'} name="Знижки" icon={<FaPercent size="23" />} />
                         <CustomLink path={'action'} name="Акції" line={true} icon={< MdOutlineDiscount size="23" />} />
                         <CustomLink path={'setting'} name="Налаштування" icon={<IoSettingsOutline size="23" />} />
-
                     </main>
                 </div >
             )}

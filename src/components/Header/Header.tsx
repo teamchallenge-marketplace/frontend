@@ -3,6 +3,7 @@ import { SlBasket } from "react-icons/sl";
 import { FaRegHeart } from "react-icons/fa";
 import SideBarMenu from "./SideBarMenu";
 import { useState } from "react";
+import CustomButton from "../Custom/CustomButton/CustomButton";
 const Header = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     const closeSideBar = () => {
@@ -39,8 +40,8 @@ const Header = () => {
                     <SlBasket size="32" />
                 </div>
                 <div className="flex justify-between w-80">
-                    <button className="font-inter text-base font-semibold leading-6 tracking-wide min-w-[137px] min-h-[37px] bg-black text-white">Login</button>
-                    <button className="font-inter text-base font-semibold leading-6 tracking-wide min-w-[137px] min-h-[37px] bg-white border  text-black">Sign up</button>
+                    <CustomButton name="Login" thames="LOGIN" />
+                    <CustomButton name="Sign up" thames="SIGN" />
                 </div>
             </div>
 
