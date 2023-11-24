@@ -40,8 +40,8 @@ const Header = () => {
                     <SlBasket size="32" />
                 </div>
                 <div className="flex justify-between w-80">
-                    <CustomButton name="Login" thames="LOGIN" />
-                    <CustomButton name="Sign up" thames="SIGN" />
+                    <CustomButton name="Login" themes="LOGIN" />
+                    <CustomButton name="Sign up" themes="SIGN" />
                 </div>
             </div>
 
