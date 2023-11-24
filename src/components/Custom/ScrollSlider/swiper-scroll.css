@@ -1,0 +1,20 @@
+.swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  height: 5px;
+  cursor: grab; /* Default cursor type */
+  transition: height 0.3s;
+  left: 0px; /* Smooth transition for height changes */
+}
+
+/* Styles for the hovered state of the Swiper scrollbar */
+.swiper-horizontal > .swiper-scrollbar:hover,
+.swiper-scrollbar.swiper-scrollbar-horizontal:hover {
+  height: 8px;
+  cursor: grab;
+}
+
+/* Styles for the active state of the Swiper scrollbar */
+.swiper-horizontal > .swiper-scrollbar:active,
+.swiper-scrollbar.swiper-scrollbar-horizontal:active {
+  cursor: grabbing;
+}
