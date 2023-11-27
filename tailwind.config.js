@@ -13,6 +13,9 @@ export default {
       },
       fontSize: {
         'simpleSize': '24px',
+      },
+      paddingFooter: {
+        '5px': '5px',
       }
     },
   },
