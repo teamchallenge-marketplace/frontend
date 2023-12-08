@@ -18,7 +18,7 @@ const ScrollSlider: FC<Props> = ({ category }) => {
     //useEffect sliderPerView
     return (
         <Swiper
-            className="pb-5"
+            className="pb-5 mb-[90px]"
             modules={[Scrollbar, Navigation]}
             spaceBetween={80}
             slidesPerView={4}

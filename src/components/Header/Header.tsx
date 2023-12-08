@@ -10,7 +10,7 @@ const Header = () => {
         setIsSidebarOpen(false);
     }
     return (
-        <header className="h-16  flex items-center justify-around p-9">
+        <header className="h-16  flex items-center justify-around p-9 shadow-lg">
 
             <div className="w-16">
                 <button
