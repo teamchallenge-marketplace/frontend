@@ -19,7 +19,7 @@ const SideBarMenu: FC<Props> = ({ isSidebarOpen, closeSideBar }) => {
     return (
         <>
             {isSidebarOpen && (
-                <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
+                <div className={` sidebar ${isSidebarOpen ? 'open top-2' : ''}`}>
                     {/* Sidebar content */}
                     <button
                         onClick={closeSideBar}
