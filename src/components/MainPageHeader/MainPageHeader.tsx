@@ -10,7 +10,7 @@ const MainPageHeader = () => {
                     <CustomTitle
                         title="Комфорт та інновації у кожному замовленні" titleSize="text-[50px]" descriptionSize="text-[30px]" description="Досліджуйте, обирайте, вражайтеся"
                     />
-                    <CustomButton name="Каталог" themes="BIG" />
+                    <CustomButton name="Каталог" themes="BIG" link="catalog"/>
                 </div>
             </div>
             <div className="w-1/2    -mt-10">

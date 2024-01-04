@@ -1,5 +1,3 @@
-import React from "react";
-
 import Logo from "../Header/Logo";
 import { FaTwitter } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
