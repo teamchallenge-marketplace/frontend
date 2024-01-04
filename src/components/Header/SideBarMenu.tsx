@@ -3,12 +3,11 @@ import { IoPersonOutline } from "react-icons/io5";
 import CustomLink from "../Custom/CustomLink/CustomLink";
 import { SlBasket } from "react-icons/sl";
 import { LuWallet } from "react-icons/lu";
-import { MdSecurity } from "react-icons/md";
-import { LuPackageSearch } from "react-icons/lu";
-import { TbMessage } from "react-icons/tb";
-import { FaPercent } from "react-icons/fa";
-import { MdOutlineDiscount } from "react-icons/md";
-import { IoSettingsOutline } from "react-icons/io5";
+import { FaRegHeart } from "react-icons/fa";
+import { CiShop } from "react-icons/ci";
+import { TfiCommentAlt } from "react-icons/tfi";
+import { IoChatbubblesOutline } from "react-icons/io5";
+import { GrCatalogOption } from "react-icons/gr";
 import './style.css';
 type Props = {
     isSidebarOpen: boolean,
@@ -36,15 +35,21 @@ const SideBarMenu: FC<Props> = ({ isSidebarOpen, closeSideBar }) => {
                         </svg>
                     </button>
                     <main className="flex flex-col  justify-center flex-1 w-5/6 pl-5 ">
+
+
                         <CustomLink path={'myProfile'} name="Мій профіль" line={true} icon={<IoPersonOutline size="23" />} />
                         <CustomLink path={'myOrders'} name="Мої замовлення" icon={<SlBasket size="23" />} />
+                        <CustomLink path={'myWishList'} name="Список бажань" icon={<FaRegHeart size="23" />} />
+
                         <CustomLink path={'myWallet'} name="Мій гаманець" icon={<LuWallet size="23" />} />
-                        <CustomLink path={'returnProductService'} name="Сервіс та повернення товару" icon={<MdSecurity size="23" />} />
-                        <CustomLink path={'orderTracking'} name="Відслідкувати замовлення" icon={<LuPackageSearch size="23" />} />
-                        <CustomLink path={'myMessage'} name="Моє листування" line={true} icon={<TbMessage size="23" />} />
-                        <CustomLink path={'discount'} name="Знижки" icon={<FaPercent size="23" />} />
-                        <CustomLink path={'action'} name="Акції" line={true} icon={< MdOutlineDiscount size="23" />} />
-                        <CustomLink path={'setting'} name="Налаштування" icon={<IoSettingsOutline size="23" />} />
+                        <CustomLink path={'startSell'} name="Почати продавати на SKY" icon={<CiShop size="23" />} />
+
+                        <CustomLink path={'myMessage'} name="Моє листування" icon={<IoChatbubblesOutline size="23" />} />
+                        <CustomLink path={'myResponse'} name="Мої відгуки" line={true} icon={<TfiCommentAlt size="23" />} />
+                        <CustomLink path={'catalog'} name="Каталог" line={true} icon={<GrCatalogOption size="23" />} />
+
+                        {/* <CustomLink path={'setting'} name="Налаштування" icon={<IoSettingsOutline size="23" />} /> */}
+
                     </main>
                 </div >
             )}

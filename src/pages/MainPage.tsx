@@ -10,6 +10,8 @@ export type MyObject = {
 };
 
 const MainPage = () => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  
     const arr = [{ id: 7, categoryName: 'Кухня', link: '', img: '' },
     { id: 1, categoryName: 'Кухня', link: '', img: '' },
     { id: 2, categoryName: 'Кухня', link: '', img: '' },

@@ -4,13 +4,14 @@ import Layout from './components/Layout/Layout';
 import MainPage from './pages/MainPage';
 import Orders from './pages/UserPages/Orders';
 import Wallet from './pages/UserPages/Wallet';
-import ProductRetService from './pages/UserPages/ProductRetService';
 import Profile from './pages/UserPages/Profile';
-import OrderTracking from './pages/UserPages/OrderTracking';
 import Message from './pages/UserPages/Message';
-import Discount from './pages/GoodsPages/Discount';
-import Action from './pages/GoodsPages/Action';
-import Setting from './pages/Setting/Setting';
+import WishList from './pages/UserPages/WishList';
+import StartSell from './pages/StartSell/StartSell';
+import Response from './pages/UserPages/Response';
+import CatalogPage from './pages/Catalog/CatalogPage';
+import CatalogCategoryPage from './pages/Catalog/CatalogCategoryPage';
+import SpecificCategoryPage from './pages/Catalog/SpecificCategoryPage';
 
 
 function App() {
@@ -22,13 +23,14 @@ function App() {
           <Route index element={<MainPage />} />
           <Route path='/myProfile' element={<Profile />} />
           <Route path="/myOrders" element={<Orders />} />
+          <Route path='/myWishList' element={<WishList />} />
           <Route path='/myWallet' element={<Wallet />} />
-          <Route path='/returnProductService' element={<ProductRetService />} />
-          <Route path='/orderTracking' element={<OrderTracking />} />
+          <Route path='/startSell' element={<StartSell />} />
           <Route path='/myMessage' element={<Message />} />
-          <Route path='/discount' element={<Discount />} />
-          <Route path='/action' element={<Action />} />
-          <Route path='/setting' element={<Setting />} />
+          <Route path='/myResponse' element={<Response />} />
+          <Route path='/catalog' element={<CatalogPage />} />
+          <Route path='/catalog/:category' element={<CatalogCategoryPage />} />
+          <Route path="/catalog/:category/:subCategory" element={<SpecificCategoryPage />} />
         </Route>
       </Routes>
     </>

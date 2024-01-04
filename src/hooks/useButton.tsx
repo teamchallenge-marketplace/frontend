@@ -1,5 +1,5 @@
 
-export type Themes = 'FORCATEGORY' | 'BUY' | 'BIG' | 'LOGIN' | 'SIGN';
+export type Themes = 'FORCATEGORY' | 'BUY' | 'BIG' | 'LOGIN' | 'SIGN' | 'BACK';
 
 const useButton = (themes: Themes) => {
 
@@ -19,6 +19,7 @@ const useButton = (themes: Themes) => {
         BIG: bigStyleProperty,
         LOGIN: loginStyleProperty,
         SIGN: signInStyleProperty,
+        BACK: buyStyleProperty
     };
 
     return themeStyles[themes];
